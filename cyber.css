@@ -1,162 +1,183 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-	font-family: 'Noto Sans JP', sans-serif;
-	padding: 0 2%;
-	margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('https://jrwrisksolutions.co.uk/wp-content/uploads/2020/10/dreamstime_xs_116025800.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    height: 100vh; /* S'assurer que le body occupe toute la hauteur de l'écran */
+    line-height: 1.6;
 }
 
-nav {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	background-color: white;
-	position: sticky;
-	top: 0;
+/* En-tête (header) */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour bien voir le logo */
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
-nav .profile {
-	display: flex;
-	align-items: center;
+
+/* Style pour le logo */
+.logo {
+    width: 150px; /* Ajuste la taille du logo */
+    height: auto;
+    margin-bottom: 20px; /* Espacement sous le logo */
 }
-nav .profile img {
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
+
+/* Style pour les sections */
+section {
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond sombre pour contraster avec l'image */
+    max-width: 800px;
+    margin: 20px auto; /* Centrer la section */
+    border-radius: 10px; /* Arrondir les bords */
 }
-nav .profile h1 {
-	margin-left: 10px;
-	font-size: 15px;
+
+/* Titres dans les sections */
+h2 {
+    font-size: 2rem;
+    text-align: center;
 }
+
+/* Texte des sections */
+section p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Liens */
+a {
+    text-decoration: none;
+    color: 	#98FB98;
+}
+
+a:hover {
+    color: 	#98FB98;
+}
+
+/* En-tête (header) */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 nav ul {
-	display: flex;
-	list-style-type: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
+
 nav ul li {
-	margin-left: 20px;
-	cursor: pointer;
-	border-bottom: 1px solid #fff;
-}
-nav ul li:hover {
-	border-bottom-color: #000;
+    margin: 0 20px;
 }
 
-.page-content {
-	margin: 4%;
-}
-.page-content header {
-	margin-top: 5%;
-	max-width: 80%;
-}
-.page-content header h1 {
-	margin: 0;
-	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
-	font-size: 6vw;
-}
-.page-content header p {
-	line-height: 30px;
-	color: #818181;
-}
-.page-content header button {
-	background-color: inherit;
-	border: none;
-	outline: none;
-	padding: 0;
-	font-size: 15px;
-	font-weight: bold;
-	padding-bottom: 5px;
-	border-bottom: 1px solid #ccc;
-	cursor: pointer;
-}
-.page-content header button:hover {
-	color: #ccc;
-	border-bottom-color: #000;
-}
-.page-content .presentation-image {
-	margin-top: 5%;
-}
-.page-content .presentation-image img {
-	max-width: 100%;
-	height: auto;
+nav ul li a {
+    font-size: 18px;
+    color: white;
 }
 
-.page-content .projects-section {
-	margin-top: 6%;
-}
-.page-content .projects-section h1 {
-	font-family: 'Oswald', sans-serif;
-	text-transform: uppercase;
-	font-size: 3vw;
-}
-.page-content .projects-section .projects {
-	display: flex;
-	flex-wrap: wrap;
-}
-.page-content .projects-section .project {
-	margin-right: 20px;
-	max-width: 195px;
-}
-.page-content .projects-section .project h4 {
-	margin: 0;
-}
-.page-content .projects-section .project .description {
-	font-size: 10px;
-}
-.page-content .projects-section .project .dates {
-	font-size: 13px;
-	color: rgb(145, 145, 145);
+/* Conteneur principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
+/* Titres principaux */
+h1, h2 {
+    text-align: center;
+    color: 	#98FB98;
+    margin-bottom: 20px;
+}
+
+/* Paragraphes */
+p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Listes */
+ul, ol {
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+/* Images */
+.illustration {
+    display: block;
+    width: 50%;
+    max-width: 200px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulaire de contact */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 12px 24px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #003366;
+}
+
+/* Footer */
 footer {
-	margin-top: 5%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	padding: 10px;
-	background-color: #000;
-	color: white;
-}
-footer .colonne p {
-	font-size: 12px;
-	color: #ccc;
-	cursor: pointer;
-}
-footer .colonne p:hover {
-	color: #fff;
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 
-@media screen and (max-width: 700px) {
-	nav {
-		justify-content: center;
-	}
-	nav ul {
-		display: none;
-	}
+/* Fond d'écran d'Accueil */
+#accueil {
+    background: url('images/cybersecurity-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
 
-	.page-content header {
-		margin-top: 10%;
-		max-width: 100%;
-	}
-	.page-content .projects-section {
-		margin-top: 15%;
-	}
-	.page-content .projects-section h1 {
-		font-size: 1.5em;
-	}
-	.page-content .projects-section .project {
-		margin-right: 0;
-		margin-bottom: 20px;
-		max-width: 100%;
-	}
-	.page-content .projects-section .project .description {
-		font-size: 13px;
-	}
+#accueil h1 {
+    font-size: 36px;
+}
 
-	footer {
-		justify-content: flex-start;
-	}
-	footer .column {
-		width: 80%;
-	}
+#accueil p {
+    font-size: 18px;
 }
