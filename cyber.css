@@ -19,14 +19,20 @@ header {
     background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour bien voir le logo */
     color: white;
     padding: 20px;
-    text-align: center;
+    text-align: center; /* Centre le texte */
+    display: flex;
+    flex-direction: column; /* Permet de centrer le logo et le texte */
+    align-items: center; /* Centre horizontalement */
+    justify-content: center;
 }
 
 /* Style pour le logo */
 .logo {
     width: 150px; 
     height: auto;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    border-radius: 50%;
+    
 }
 
 /* Style pour les sections */
@@ -171,3 +177,4 @@ footer {
 #accueil p {
     font-size: 18px;
 }
+
