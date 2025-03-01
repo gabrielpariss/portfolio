@@ -24,9 +24,9 @@ header {
 
 /* Style pour le logo */
 .logo {
-    width: 150px; /* Ajuste la taille du logo */
+    width: 150px; 
     height: auto;
-    margin-bottom: 20px; /* Espacement sous le logo */
+    margin-bottom: 20px; 
 }
 
 /* Style pour les sections */
@@ -38,19 +38,16 @@ section {
     border-radius: 10px; /* Arrondir les bords */
 }
 
-/* Titres dans les sections */
 h2 {
     font-size: 2rem;
     text-align: center;
 }
 
-/* Texte des sections */
 section p {
     font-size: 1.1rem;
     text-align: center;
 }
 
-/* Liens */
 a {
     text-decoration: none;
     color: 	#98FB98;
@@ -60,7 +57,6 @@ a:hover {
     color: 	#98FB98;
 }
 
-/* En-tête (header) */
 header {
     background-color: #003366;
     color: white;
@@ -83,27 +79,23 @@ nav ul li a {
     color: white;
 }
 
-/* Conteneur principal */
 .container {
     width: 80%;
     margin: 0 auto;
     max-width: 1200px;
 }
 
-/* Titres principaux */
 h1, h2 {
     text-align: center;
     color: 	#98FB98;
     margin-bottom: 20px;
 }
 
-/* Paragraphes */
 p {
     text-align: center;
     margin-bottom: 30px;
 }
 
-/* Listes */
 ul, ol {
     padding-left: 20px;
 }
@@ -123,7 +115,6 @@ ul li, ol li {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Formulaire de contact */
 form {
     display: flex;
     flex-direction: column;
@@ -158,7 +149,6 @@ form button:hover {
     background-color: #003366;
 }
 
-/* Footer */
 footer {
     background-color: #003366;
     color: white;
